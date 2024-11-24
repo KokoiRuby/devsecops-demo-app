@@ -9,9 +9,6 @@ import (
 func main() {
 	r := gin.Default()
 
-	// css
-	r.Static("/static", "./static")
-
 	// load template
 	r.LoadHTMLGlob("templates/*")
 

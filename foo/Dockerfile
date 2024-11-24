@@ -35,8 +35,7 @@ WORKDIR /app
 # Copy the built application
 COPY --from=builder /app/main /app/main
 
-# Copy static files and templates
-COPY --from=builder /build/static /app/static
+# Copy templates
 COPY --from=builder /build/templates /app/templates
 
 # Command to run the application
